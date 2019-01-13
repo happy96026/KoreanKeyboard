@@ -10,7 +10,7 @@ import android.view.inputmethod.InputConnection;
 public class KoreanInputMethodService extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
     public View onCreateInputView() {
         KeyboardView keyboardView = (KeyboardView) getLayoutInflater().inflate(R.layout.keyboard_view, null);
-        Keyboard keyboard = new Keyboard(this, R.xml.number_pad);
+        Keyboard keyboard = new Keyboard(this, R.xml.keyboard);
         keyboardView.setKeyboard(keyboard);
         keyboardView.setOnKeyboardActionListener(this);
         return keyboardView;
